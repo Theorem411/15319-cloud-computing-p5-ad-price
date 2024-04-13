@@ -41,7 +41,7 @@ public class AdPriceTaskApplication implements TaskApplication {
         KafkaInputDescriptor adClickInputDescriptor = 
                 kafkaSystemDescriptor.getInputDescriptor("ad-click", new JsonSerde<>());
         
-        KafkaInputDescriptor adPriceOutputDescriptor = 
+        KafkaOutputDescriptor adPriceOutputDescriptor = 
                 kafkaSystemDescriptor.getOutputDescriptor("ad-price", new JsonSerde<>());
         // Bound you descriptor with your taskApplicationDescriptor in here.
         // Please refer to the same link.
