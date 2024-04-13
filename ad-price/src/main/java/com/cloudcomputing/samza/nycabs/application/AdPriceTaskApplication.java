@@ -47,7 +47,7 @@ public class AdPriceTaskApplication implements TaskApplication {
         // Please refer to the same link.
         taskApplicationDescriptor.withDefaultSystem(kafkaSystemDescriptor);
         taskApplicationDescriptor.withInputStream(adClickInputDescriptor);
-        taskApplicationDescriptor.withOutputStream(adPriceOutputDescriptors);
+        taskApplicationDescriptor.withOutputStream(adPriceOutputDescriptor);
 
         taskApplicationDescriptor.withTaskFactory((StreamTaskFactory)() -> new AdPriceTask());
     }
